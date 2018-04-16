@@ -1,0 +1,211 @@
+Apr 15, 2018 4:33:04 PM MySort main
+INFO: Sorting of file size :20GB
+Apr 15, 2018 4:33:05 PM MySort main
+INFO: Total number of records(lines) in the file:200000000
+Apr 15, 2018 4:33:05 PM MySort main
+INFO: Size of a chunk of file ( as per memory allocated to this program for execution) is 500MB
+Apr 15, 2018 4:33:05 PM MySort main
+INFO: Number of Chunks needed to sort the file is 40
+Apr 15, 2018 4:33:05 PM MySort main
+INFO: Number of threads to sort each chunk is 2
+Apr 15, 2018 4:33:05 PM MySort main
+INFO: Number of files = numberofChunks *  number of threads per each chunk
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Sorting of file size :20GB
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Total number of records(lines) in the file:200000000
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Size of a chunk of file ( as per memory allocated to this program for execution) is 250MB
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Number of Chunks needed to sort the file is 80
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Number of threads to sort each chunk is 1
+Apr 15, 2018 4:55:55 PM MySort main
+INFO: Number of files = numberofChunks *  number of threads per each chunk
+Apr 15, 2018 5:06:24 PM MySort main
+INFO: Thus, 80 small(temporary) files are created
+Apr 15, 2018 5:06:24 PM MySort main
+INFO: Total No of records processed in each file is 2500000
+Apr 15, 2018 5:06:24 PM MySort main
+INFO: Sorting of files initialized!
+Apr 15, 2018 5:06:24 PM MySort main
+INFO: Sorting file 0
+Apr 15, 2018 5:07:54 PM MySort main
+INFO: Sorting file 1
+Apr 15, 2018 5:09:04 PM MySort main
+INFO: Sorting file 2
+Apr 15, 2018 5:10:14 PM MySort main
+INFO: Sorting file 3
+Apr 15, 2018 5:11:21 PM MySort main
+INFO: Sorting file 4
+Apr 15, 2018 5:12:30 PM MySort main
+INFO: Sorting file 5
+Apr 15, 2018 5:13:40 PM MySort main
+INFO: Sorting file 6
+Apr 15, 2018 5:14:51 PM MySort main
+INFO: Sorting file 7
+Apr 15, 2018 5:16:01 PM MySort main
+INFO: Sorting file 8
+Apr 15, 2018 5:17:09 PM MySort main
+INFO: Sorting file 9
+Apr 15, 2018 5:18:16 PM MySort main
+INFO: Sorting file 10
+Apr 15, 2018 5:19:23 PM MySort main
+INFO: Sorting file 11
+Apr 15, 2018 5:20:33 PM MySort main
+INFO: Sorting file 12
+Apr 15, 2018 5:21:43 PM MySort main
+INFO: Sorting file 13
+Apr 15, 2018 5:22:51 PM MySort main
+INFO: Sorting file 14
+Apr 15, 2018 5:24:01 PM MySort main
+INFO: Sorting file 15
+Apr 15, 2018 5:25:09 PM MySort main
+INFO: Sorting file 16
+Apr 15, 2018 5:26:16 PM MySort main
+INFO: Sorting file 17
+Apr 15, 2018 5:27:23 PM MySort main
+INFO: Sorting file 18
+Apr 15, 2018 5:28:32 PM MySort main
+INFO: Sorting file 19
+Apr 15, 2018 5:29:41 PM MySort main
+INFO: Sorting file 20
+Apr 15, 2018 5:30:46 PM MySort main
+INFO: Sorting file 21
+Apr 15, 2018 5:31:51 PM MySort main
+INFO: Sorting file 22
+Apr 15, 2018 5:32:57 PM MySort main
+INFO: Sorting file 23
+Apr 15, 2018 5:34:02 PM MySort main
+INFO: Sorting file 24
+Apr 15, 2018 5:35:06 PM MySort main
+INFO: Sorting file 25
+Apr 15, 2018 5:36:12 PM MySort main
+INFO: Sorting file 26
+Apr 15, 2018 5:37:17 PM MySort main
+INFO: Sorting file 27
+Apr 15, 2018 5:38:20 PM MySort main
+INFO: Sorting file 28
+Apr 15, 2018 5:39:23 PM MySort main
+INFO: Sorting file 29
+Apr 15, 2018 5:40:26 PM MySort main
+INFO: Sorting file 30
+Apr 15, 2018 5:41:28 PM MySort main
+INFO: Sorting file 31
+Apr 15, 2018 5:42:29 PM MySort main
+INFO: Sorting file 32
+Apr 15, 2018 5:43:32 PM MySort main
+INFO: Sorting file 33
+Apr 15, 2018 5:44:35 PM MySort main
+INFO: Sorting file 34
+Apr 15, 2018 5:45:36 PM MySort main
+INFO: Sorting file 35
+Apr 15, 2018 5:46:40 PM MySort main
+INFO: Sorting file 36
+Apr 15, 2018 5:47:45 PM MySort main
+INFO: Sorting file 37
+Apr 15, 2018 5:48:48 PM MySort main
+INFO: Sorting file 38
+Apr 15, 2018 5:49:51 PM MySort main
+INFO: Sorting file 39
+Apr 15, 2018 5:50:54 PM MySort main
+INFO: Sorting file 40
+Apr 15, 2018 5:51:57 PM MySort main
+INFO: Sorting file 41
+Apr 15, 2018 5:53:01 PM MySort main
+INFO: Sorting file 42
+Apr 15, 2018 5:54:03 PM MySort main
+INFO: Sorting file 43
+Apr 15, 2018 5:55:05 PM MySort main
+INFO: Sorting file 44
+Apr 15, 2018 5:56:07 PM MySort main
+INFO: Sorting file 45
+Apr 15, 2018 5:57:09 PM MySort main
+INFO: Sorting file 46
+Apr 15, 2018 5:58:14 PM MySort main
+INFO: Sorting file 47
+Apr 15, 2018 5:59:17 PM MySort main
+INFO: Sorting file 48
+Apr 15, 2018 6:00:18 PM MySort main
+INFO: Sorting file 49
+Apr 15, 2018 6:01:22 PM MySort main
+INFO: Sorting file 50
+Apr 15, 2018 6:02:24 PM MySort main
+INFO: Sorting file 51
+Apr 15, 2018 6:03:25 PM MySort main
+INFO: Sorting file 52
+Apr 15, 2018 6:04:27 PM MySort main
+INFO: Sorting file 53
+Apr 15, 2018 6:05:33 PM MySort main
+INFO: Sorting file 54
+Apr 15, 2018 6:06:35 PM MySort main
+INFO: Sorting file 55
+Apr 15, 2018 6:07:38 PM MySort main
+INFO: Sorting file 56
+Apr 15, 2018 6:08:41 PM MySort main
+INFO: Sorting file 57
+Apr 15, 2018 6:09:43 PM MySort main
+INFO: Sorting file 58
+Apr 15, 2018 6:10:43 PM MySort main
+INFO: Sorting file 59
+Apr 15, 2018 6:11:46 PM MySort main
+INFO: Sorting file 60
+Apr 15, 2018 6:12:50 PM MySort main
+INFO: Sorting file 61
+Apr 15, 2018 6:13:51 PM MySort main
+INFO: Sorting file 62
+Apr 15, 2018 6:14:54 PM MySort main
+INFO: Sorting file 63
+Apr 15, 2018 6:15:56 PM MySort main
+INFO: Sorting file 64
+Apr 15, 2018 6:16:57 PM MySort main
+INFO: Sorting file 65
+Apr 15, 2018 6:17:58 PM MySort main
+INFO: Sorting file 66
+Apr 15, 2018 6:18:59 PM MySort main
+INFO: Sorting file 67
+Apr 15, 2018 6:20:00 PM MySort main
+INFO: Sorting file 68
+Apr 15, 2018 6:21:02 PM MySort main
+INFO: Sorting file 69
+Apr 15, 2018 6:22:03 PM MySort main
+INFO: Sorting file 70
+Apr 15, 2018 6:23:06 PM MySort main
+INFO: Sorting file 71
+Apr 15, 2018 6:24:07 PM MySort main
+INFO: Sorting file 72
+Apr 15, 2018 6:25:08 PM MySort main
+INFO: Sorting file 73
+Apr 15, 2018 6:26:10 PM MySort main
+INFO: Sorting file 74
+Apr 15, 2018 6:27:13 PM MySort main
+INFO: Sorting file 75
+Apr 15, 2018 6:28:16 PM MySort main
+INFO: Sorting file 76
+Apr 15, 2018 6:29:16 PM MySort main
+INFO: Sorting file 77
+Apr 15, 2018 6:30:22 PM MySort main
+INFO: Sorting file 78
+Apr 15, 2018 6:31:23 PM MySort main
+INFO: Sorting file 79
+Apr 15, 2018 6:32:23 PM MySort main
+INFO: Sorting completed!
+Apr 15, 2018 6:32:23 PM MySort main
+INFO: Initializing K way merge to merge the sorted files
+Apr 15, 2018 6:58:44 PM MySort main
+INFO: K way merge is completed.
+Apr 15, 2018 6:58:44 PM MySort main
+INFO: Final output file is stored in the directory. The sorted file after merging is FinalSortedFile
+Apr 15, 2018 6:58:44 PM MySort main
+INFO: Execution time in seconds: 7369
+Apr 15, 2018 6:58:44 PM MySort main
+INFO: Total Data read: 60GB
+Apr 15, 2018 6:58:44 PM MySort main
+INFO: Total Data write: 60GB
+Apr 15, 2018 6:58:44 PM MySort main
+INFO:  Throughput in  MB/Sec: 5.42814493146967
+Records: 200000000
+Checksum: 5f5cc94518a4203
+Duplicate keys: 0
+SUCCESS - all records are in order
+

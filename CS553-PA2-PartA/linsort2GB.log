@@ -1,0 +1,5 @@
+Time taken to Sort 2GB of data using LinSort  in seconds : 27.78
+Records: 20000000
+Checksum: 98923e9cff98ac
+Duplicate keys: 0
+SUCCESS - all records are in order
