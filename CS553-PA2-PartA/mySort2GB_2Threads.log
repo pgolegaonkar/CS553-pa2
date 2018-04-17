@@ -1,0 +1,59 @@
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: No of Thread 2
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Sorting of file size :2GB
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Size of a chunk of file ( as per memory allocated to this program for execution) is 500MB
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Number of Chunks needed to sort the file is 4
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Number of threads to sort each chunk is 2
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Number of files = numberofChunks *  number of threads per each chunk
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Thus, 8 small(temporary) files are created
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Total No of records processed in each file is 2500000
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Sorting of files initialized!
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Sorting file 0
+Apr 16, 2018 6:17:47 PM MySort main
+INFO: Sorting file 1
+Apr 16, 2018 6:18:00 PM MySort main
+INFO: Sorting file 2
+Apr 16, 2018 6:18:01 PM MySort main
+INFO: Sorting file 3
+Apr 16, 2018 6:18:12 PM MySort main
+INFO: Sorting file 4
+Apr 16, 2018 6:18:12 PM MySort main
+INFO: Sorting file 5
+Apr 16, 2018 6:18:24 PM MySort main
+INFO: Sorting file 6
+Apr 16, 2018 6:18:24 PM MySort main
+INFO: Sorting file 7
+Apr 16, 2018 6:18:35 PM MySort main
+INFO: Sorting completed!
+Apr 16, 2018 6:18:35 PM MySort main
+INFO: Initializing K way merge to merge the sorted files
+Apr 16, 2018 6:18:35 PM MySort main
+INFO: Execution time before merging is 47
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: K way merge is completed.
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Final output file is stored in the directory. The sorted file after merging is FinalSortedFile
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Execution time in seconds: 86
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Total Data read: 6GB
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Total Data write: 6GB
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Throughput is calculated as  totalIOInMB / executionTimeInSec
+Apr 16, 2018 6:19:13 PM MySort main
+INFO: Throughput  for Thread: 2 in  MB/Sec: 46.51162790697674
+Time taken to sort 2GB in (seconds): 	86.89
+Records: 20000000
+Checksum: 98923e9cff98ac
+Duplicate keys: 0
+SUCCESS - all records are in order

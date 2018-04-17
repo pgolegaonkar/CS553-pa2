@@ -1,0 +1,107 @@
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: No of Thread 8
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting of file size :2GB
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Size of a chunk of file ( as per memory allocated to this program for execution) is 500MB
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Number of Chunks needed to sort the file is 4
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Number of threads to sort each chunk is 8
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Number of files = numberofChunks *  number of threads per each chunk
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Thus, 32 small(temporary) files are created
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Total No of records processed in each file is 625000
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting of files initialized!
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 0
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 1
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 2
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 3
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 4
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 5
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 6
+Apr 16, 2018 6:24:37 PM MySort main
+INFO: Sorting file 7
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 8
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 9
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 10
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 11
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 12
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 13
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 14
+Apr 16, 2018 6:24:45 PM MySort main
+INFO: Sorting file 15
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 16
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 17
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 18
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 19
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 20
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 21
+Apr 16, 2018 6:24:51 PM MySort main
+INFO: Sorting file 22
+Apr 16, 2018 6:24:52 PM MySort main
+INFO: Sorting file 23
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 24
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 25
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 26
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 27
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 28
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 29
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 30
+Apr 16, 2018 6:24:58 PM MySort main
+INFO: Sorting file 31
+Apr 16, 2018 6:25:05 PM MySort main
+INFO: Sorting completed!
+Apr 16, 2018 6:25:05 PM MySort main
+INFO: Initializing K way merge to merge the sorted files
+Apr 16, 2018 6:25:05 PM MySort main
+INFO: Execution time before merging is 28
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: K way merge is completed.
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Final output file is stored in the directory. The sorted file after merging is FinalSortedFile
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Execution time in seconds: 68
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Total Data read: 6GB
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Total Data write: 6GB
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Throughput is calculated as  totalIOInMB / executionTimeInSec
+Apr 16, 2018 6:25:45 PM MySort main
+INFO: Throughput  for Thread: 8 in  MB/Sec: 58.8235294117647
+Time taken to sort 2GB in (seconds): 	68.83
+Records: 20000000
+Checksum: 98923e9cff98ac
+Duplicate keys: 0
+SUCCESS - all records are in order

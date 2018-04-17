@@ -17,6 +17,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.concurrent.TimeUnit;
+import java.io.BufferedWriter;
 //Java code for thread creation by extending
 //the Thread class
 
@@ -44,17 +45,20 @@ private Thread t;
 			File inFile = new File(inputFile);
 			long fileLength = (inFile.length())/100;
 			reader = new LineNumberReader(new FileReader(inputFile));
-			for(long i=0;i<fileLength;i++){
-				line = reader.readLine();
-				while(line == null && i < fileLength){
-					line = reader.readLine();
+			//for(long i=0;i<fileLength;i++){
+				//line = reader.readLine();
+				//while(line == null == i < fileLength){
+				while((line = reader.readLine())!= null){	
+					//line = reader.readLine();
+					data.add(line);
 				}
-				data.add(line);
-			}
+				//data.add(line);
+			//	}
 			////System.out.println("Array size is " + data.size());
 			reader.close();
 			File f = new File(inputFile);
 			f.delete();
+			/*
 			Collections.sort(data, new Comparator<String>() {
         	 public int compare(String str1, String str2){
         	 	if(str1 == null || str2 == null){
@@ -64,13 +68,22 @@ private Thread t;
         		 String substr2 = str2.substring(0,10);
         		 return substr1.compareTo(substr2);
         	 }
-			});
+			});*/
+
+			Collections.sort(data);
 			File tmpfile = new File(outputFile);
+			BufferedWriter buffWriter=new BufferedWriter(new FileWriter(tmpfile));
+			for (String value : data) {
+                                buffWriter.write(value + "\r\n");
+                        }
+			buffWriter.close();
+
+		/*	File tmpfile = new File(outputFile);
 			FileWriter fileWriter = new FileWriter(tmpfile);
 			for (String value : data) {
 				fileWriter.write(value + "\r\n");
 			}
-			fileWriter.close();
+			fileWriter.close();*/
 			//System.out.println("output file length is " + tmpfile.length());
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -99,7 +112,7 @@ class DataBuffer {
 	public DataBuffer(File file) throws IOException {
 		originalFile = file;
 		fileLength = file.length()/100;
-		reader = new LineNumberReader(new FileReader(file));
+		reader = new LineNumberReader(new FileReader(file), (20 * 100));
 		getNextValue();
 	}
 
@@ -192,14 +205,16 @@ public class MySort {
 		int noOfThreads=Integer.parseInt(args[1]); //This represent the Number of thread to process each chunks
 		long maxRecordCount=Long.parseLong(args[2]); //This represents the maximum records of each chunk. Size of chunk=maxRecordCount*100 (in bytes)
 		String filePath=null;
+		long fileSize = 2000000000l;
 		if("2GB".equalsIgnoreCase(sortFileSize)){
-			filePath="data-2GB";
+			filePath="/input/data-2GB.in";
 			handler = new FileHandler("mySort2GB.log",append); 
 		}else if("20GB".equalsIgnoreCase(sortFileSize)){
-			filePath="data-20GB";
+			filePath="/input/data-20GB.in";
+			fileSize = 20000000000l;
 			handler = new FileHandler("mySort20GB.log",append); 
-			noOfThreads=1;
-			maxRecordCount=2500000;
+			//noOfThreads=1;
+			//maxRecordCount=2500000;
 		}
 		//System.out.println("No of Thread "+noOfThreads);
 		logger.info("No of Thread "+noOfThreads);
@@ -209,13 +224,13 @@ public class MySort {
 		//System.out.println("Sorting of file size maximum of records File :"+maxRecordCount);
 		long size = 100;
 		File file = new File(filePath);
-		long fileSize=file.length();
+		//long fileSize=file.length();
 		//System.out.println("Actula file size is "+fileSize);
 		long recordsCount =  (fileSize/size);
 		//System.out.println("Sorting of file size :"+sortFileSize); 
 		logger.info("Sorting of file size :"+sortFileSize); 
 		//System.out.println("Total number of records(lines) in the file:"+recordsCount); 
-		logger.info("Total number of records(lines) in the file:"+recordsCount); 
+		//logger.info("Total number of records(lines) in the file:"+recordsCount); 
 		//long maxRecordCount = 2500000 ;
 		long numberofChunks = recordsCount/maxRecordCount;
 		long chunkSize = (maxRecordCount * 100)/(1000 * 1000);
@@ -229,15 +244,15 @@ public class MySort {
 		logger.info("Number of files = numberofChunks *  number of threads per each chunk");
 		long numberofFiles = (numberofChunks * noOfThreads);
 		
-		String splitCommand = "split -n " + numberofFiles + " -d " + filePath + " tmpFile";
-		Process p;
+		//String splitCommand = "split -n " + numberofFiles + " -d " + filePath + " tmpFile";
+		//Process p;
 		long startTime = System.nanoTime();
-		try {
-			p = Runtime.getRuntime().exec(splitCommand);
-			p.waitFor();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		//try {
+		//	p = Runtime.getRuntime().exec(splitCommand);
+		//	p.waitFor();
+		//} catch (Exception e) {
+		//	e.printStackTrace();
+		//}
 		//System.out.println("Thus, " + numberofFiles+" small(temporary) files are created");
 		logger.info("Thus, " + numberofFiles+" small(temporary) files are created");
 		//System.out.println("Total No of records processed in each file is "+(maxRecordCount/noOfThreads));
@@ -259,14 +274,14 @@ public class MySort {
 					//System.out.println("Sorting file "+tempIndex);
 					logger.info("Sorting file "+tempIndex);
 					if(tempIndex<10)
-						tmpSortFilePath = "tmpFile0"+tempIndex;
+						tmpSortFilePath = "/tmp/tmpFile0"+tempIndex;
 					else
-						tmpSortFilePath = "tmpFile" + tempIndex;
-					threadSort[j] = new sortMultiThread(tmpSortFilePath,tmpSortFilePath+"sort",executionCompleted);
+						tmpSortFilePath = "/tmp/tmpFile" + tempIndex;
+					threadSort[j] = new sortMultiThread(tmpSortFilePath,tmpSortFilePath+"sort", executionCompleted);
 					threadSort[j].start();
 					tempIndex = tempIndex + 1;
 				}
-				/*for (int j = 0; j < noOfThreads; j++) {
+			/*	for (int j = 0; j < noOfThreads; j++) {
 					threadSort[j].join();
 				}*/
 				////System.out.println("one set of sorted files done");
@@ -291,13 +306,16 @@ public class MySort {
 		logger.info("Initializing K way merge to merge the sorted files");
 		for(int i=0;i<numberofFiles;i++){
 			if(i<10)
-				file_list.add(new File("tmpFile0" + i + "sort"));
+				file_list.add(new File("/tmp/tmpFile0" + i + "sort"));
 			else
-				file_list.add(new File("tmpFile" + i + "sort"));
+				file_list.add(new File("/tmp/tmpFile" + i + "sort"));
 		}
 		
         //System.in.read();
-		File outputFile = new File("FinalSortedFile");
+		long endTimeTemp = System.nanoTime();
+		long outputTemp = ((endTimeTemp - startTime) / 1000000)/1000;
+		logger.info("Execution time before merging is " + outputTemp);
+		File outputFile = new File("/tmp/FinalSortedFile");
 		performKWayMergeSort(file_list, outputFile, (int)numberofFiles);
 		long endTime = System.nanoTime();
 		//System.out.println("K way merge is completed.");
